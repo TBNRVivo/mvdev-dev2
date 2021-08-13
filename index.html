@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connect | A Free Messenger</title>
+    <link rel="icon" type="image" href="Icon_Updated2.png" sizes="32x32" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <style>
+      button.accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+        background: #e0e5ec;
+      }
+      button.accordion.active,
+      button.accordion:hover {
+        background-color: #ddd;
+      }
+      button.accordion:after {
+        /* Unicode character for "plus" sign (+) is '\02795' */
+        content: "\02795";
+        font-size: 13px;
+        color: #777;
+        float: right;
+        margin-left: 5px;
+      }
+      button.accordion.active:after {
+        /* Unicode character for "minus" sign (-) is '\2796' */
+        content: "\2796";
+      }
+      div.panel {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.6s ease-in-out;
+        opacity: 0;
+      }
+      div.panel.show {
+        opacity: 1;
+        max-height: 500px;
+        background: #e0e5ec;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Connect: The Free and Safe Messenger!</h1>
+    <p>What is Connect?</p>
+    <p>
+      Connect Is A Free Messanger Which Focuses on Privacy and Security. It
+      brings to you The comfort of Safe Messaging and allows you to chat with
+      others, Without the worry of The Invasion of Privacy.
+    </p>
+    <div class="frame">
+      <!-- <button class="custom-btn btn-15">Download!</button> -->
+      <button class="custom-btn btn-7"><span>Download!</span></button>
+    </div>
+
+    <p><marquee>New Update v---!</marquee></p>
+
+    <button class="accordion">How to Download?</button>
+    <div class="panel">
+      <p>
+        You can Easily click the download button which will download the file
+        for you. Then, Go to your File Manager and Open the file to Install.
+      </p>
+    </div>
+    <button class="accordion">What to Do if an Update arrives?</button>
+    <div class="panel">
+      <p>
+        Well, There are two Options,
+        <ol>
+          <li> Uninstall and reinstall. </li>
+          <li> Download and open the APK again, Which Will auto-update the file for you.</li>
+        </ol>
+      </p>
+    </div>
+    <button class="accordion">How can you Contact us For Customer Support?</button>
+    <div class="panel">
+      <p>
+        You can Send A Mail To us Here: (We Might Be Slow to Respond)
+        <a href="mailto:mvdevelopers1981@gmail.com"> Contact Us</a>
+      </p>
+    </div>
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function () {
+          this.classList.toggle("active");
+          this.nextElementSibling.classList.toggle("show");
+        };
+      }
+    </script>
+<p class="disclaimer"> MVDevelopers are not responsible for any damage to your Device. Download at your own risk.
+  This website is solely made for education purposes. Please Contact us for any correction and we will be happy to do so. Thank you to all image providers on Pixabay and Freepik.
+</p>
+
+  
+    <!-- <div class="frame">
+    //   <button class="custom-btn btn-1">Read More</button>
+    //   <button class="custom-btn btn-2">Read More</button>
+    //   <button class="custom-btn btn-3"><span>Read More</span></button>
+    //   <button class="custom-btn btn-4"><span>Read More</span></button>
+    //   <button class="custom-btn btn-5"><span>Read More</span></button>
+    //   <button class="custom-btn btn-6"><span>Read More</span></button>
+    //   <button class="custom-btn btn-7"><span>Read More</span></button>
+    //   <button class="custom-btn btn-8"><span>Read More</span></button>
+    //   <button class="custom-btn btn-9">Read More</button>
+    //   <button class="custom-btn btn-10">Read More</button>
+    //   <button class="custom-btn btn-11">
+    //     Read More
+    //     <div class="dot"></div>
+    //   </button>
+    //   <button class="custom-btn btn-12">
+    //     <span>Click!</span><span>Read More</span>
+    //   </button>
+    //   <button class="custom-btn btn-13">Read More</button>
+    //   <button class="custom-btn btn-14">Read More</button>
+
+    //   <button class="custom-btn btn-16">Read More</button>
+    // </div> -->
+  </body>
+</html>
